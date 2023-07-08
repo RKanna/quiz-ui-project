@@ -26,3 +26,44 @@ function toggleCheckbox(checkbox) {
   }
 }
 
+// submitButton.addEventListener("click", function () {
+//   for (var i = 0; i < checkboxes.length; i++) {
+//     console.log(checkboxes[i].checked);
+//   }
+
+//   if ((questionOneContainer.style.display = "block" && checkboxes[i].checked)) {
+//     questionOneContainer.style.display = "none";
+//     questionTwoContainer.style.display = "block";
+//   }
+// });
+
+submitButton.addEventListener("click", function () {
+  for (var i = 0; i < checkboxes.length; i++) {
+    console.log(checkboxes[i].checked);
+
+    if (
+      questionOneContainer.style.display === "block" &&
+      checkboxes[i].checked
+    ) {
+      questionOneContainer.style.display = "none";
+      questionTwoContainer.style.display = "block";
+    } else if (
+      questionTwoContainer.style.display === "block" &&
+      checkboxes[i].checked
+    ) {
+      questionTwoContainer.style.display = "none";
+      questionThreeContainer.style.display = "block";
+    } else if (
+      questionThreeContainer.style.display === "block" &&
+      checkboxes[i].checked
+    ) {
+      questionThreeContainer.style.display = "none";
+      questionFourContainer.style.display = "block";
+    } else if (
+      (questionFourContainer.style.display = "block" && checkboxes[i].checked)
+    ) {
+      questionFourContainer.style.display = "none";
+      resultContainer.style.display = "flex";
+    }
+  }
+});

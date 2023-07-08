@@ -44,6 +44,7 @@ body {
   background-color: #8e44ad;
   cursor: pointer;
   box-shadow: var(--dark-shadow);
+  color: white;
 }
 /* .box-section {
   border-radius: 1rem;

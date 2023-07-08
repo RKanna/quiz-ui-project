@@ -91,3 +91,6 @@ input[type="checkbox"]:checked {
   padding-top: 4rem;
   padding-bottom: 0;
 }
+.btnReload {
+  display: none;
+}
